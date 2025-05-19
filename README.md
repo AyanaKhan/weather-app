@@ -13,7 +13,7 @@ The Weather Intelligence Platform is a responsive web application that allows us
 
 ## Link to Developer Manual
 
-See below in the second half of this README.
+Here is the developer manual: [Devleoper manual](docs)
 
 
 
