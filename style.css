@@ -1,115 +1,140 @@
-/* Base styling */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f4f8;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  header {
+    background-color: #0077b6;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  nav {
+    margin-top: 0.5rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 150px;
+  }
+  
+  .button-73 {
+    appearance: none;
+    background-color: #FFFFFF;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #ADCFFF 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-73:hover {
+    background-color: rgb(248, 248, 194);
+    box-shadow: skyblue 0 -6px 8px inset;
+    transform: scale(1.125);
+  }
+  
+  .button-73:active {
+    transform: scale(1.025);
+  }
+  
+  @media (min-width: 768px) {
+    .button-73 {
+      font-size: 1.5rem;
+      padding: .75rem 2rem;
+    }
+  }
+  
+  #weather-results, #forecast-results {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  #forecast-results div {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+  }
+  
+  h1, h2, h4 {
+    color: #023e8a;
+  }
+  body.dark {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  body.dark header {
+    background-color: #1f1f1f;
+  }
+  body.dark input,
+  body.dark button {
+    background-color: #333;
+    color: white;
+    border-color: #555;
+  }
+  #dark-toggle {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
 
-/* Header and navigation */
-header {
-  background-color: #0077b6;
-  color: white;
-  padding: 1rem 0;
-  text-align: center;
-}
 
-nav {
-  margin-top: 0.5rem;
-}
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 1rem;
-  font-weight: bold;
-}
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Page layout */
-main {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
-}
-
-/* Form layout */
-form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  align-items: center;
-  justify-content: center;
-}
-
-label {
-  font-weight: bold;
-}
-
-input {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  width: 150px;
-}
-
-button {
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 6px;
-  background-color: #0077b6;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #023e8a;
-}
-
-/* Weather results */
-#weather-results, #forecast-results {
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* Forecast */
-#forecast-results div {
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 1rem;
-}
-
-/* Headings */
-h1, h2, h4 {
-  color: #023e8a;
-}
-body.dark {
-  background-color: #121212;
-  color: #f0f0f0;
-}
-body.dark header {
-  background-color: #1f1f1f;
-}
-body.dark input,
-body.dark button {
-  background-color: #333;
-  color: white;
-  border-color: #555;
-}
-#dark-toggle {
-  background: #222;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 50%;
-  cursor: pointer;
-}
