@@ -33,4 +33,9 @@ This project is static and requires no Node.js server to run.
    ```bash
    git clone https://github.com/ayanakhan/weather-app.git
 
+   ## Live Demo
+
+[View Deployed Project on Vercel](https://weather-app-g4a1.vercel.app/)
+
+
 
