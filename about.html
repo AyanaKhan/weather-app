@@ -1,0 +1,76 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Our Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 data-aos="fade-down">About Our Weather Intelligence Platform</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="forecast.html">Forecast</a>
+      <a href="about.html">About</a>
+      <a href="help.html">Help</a>
+    </nav>
+  </header>
+
+  <main>
+    <section data-aos="fade-up">
+      <h2>Our Mission</h2>
+      <p>
+        Weather isn't just about sunshine and storms, it's about safety, planning, and peace of mind. Our Weather Intelligence Platform empowers individuals and communities to make smarter, real-time decisions using precise global weather forecasts.
+      </p>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2>Why This App Matters</h2>
+      <p>
+        With climate change accelerating and weather patterns becoming more unpredictable, access to reliable, easy-to-read forecasts is more critical than ever. Whether you're a traveler, farmer, student, or just planning your week, our app offers a fast, user-friendly interface backed by live data from the 7Timer weather API and real-time logging via Supabase.
+      </p>
+      <p>
+        We built this platform not just as a project but as a prototype for how future tools can combine open data and responsive design to make weather info accessible to everyone, everywhere.
+      </p>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2>Our Technology</h2>
+      <ul>
+        <li><strong>7Timer API</strong> for real-time weather data</li>
+        <li><strong>Supabase</strong> for logging and search history</li>
+        <li><strong>Chart.js</strong> for dynamic temperature trend visualizations</li>
+        <li><strong>AOS.js</strong> for smooth, responsive UI animations</li>
+        <li>Modern HTML, CSS (Flexbox), and JavaScript</li>
+      </ul>
+    </section>
+
+    <section data-aos="fade-right">
+      <h2>Meet the Team</h2>
+      <ul>
+        <li><strong>Ayana Khan</strong> — Public Health & Info Science</li>
+        <li><strong>Deborah Alain</strong> — Full- Info Science</li>
+      </ul>
+      <p>Together, we’re passionate about building tools that bridge the gap between accessibility, design, and functionality.</p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script>
+  const darkToggle = document.createElement('button');
+  darkToggle.textContent = '🌓';
+  darkToggle.id = 'dark-toggle';
+  darkToggle.style.position = 'fixed';
+  darkToggle.style.top = '10px';
+  darkToggle.style.right = '10px';
+  darkToggle.style.zIndex = '999';
+  document.body.appendChild(darkToggle);
+  darkToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+  });
+</script>
+
+</body>
+</html>

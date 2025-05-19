@@ -1,0 +1,70 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Help - Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 data-aos="fade-down">Help & Instructions</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="forecast.html">Forecast</a>
+      <a href="about.html">About</a>
+      <a href="help.html">Help</a>
+    </nav>
+  </header>
+
+  <main>
+    <section data-aos="fade-up">
+      <h2>How to Use the App</h2>
+      <ul>
+        <li>Enter a valid latitude and longitude (e.g. 38.99, -76.93) on the Home or Forecast page.</li>
+        <li>Click “Get Weather” or “Get Forecast” to fetch data for that location.</li>
+        <li>Scroll down to see the current weather, 7-day forecast, and temperature chart.</li>
+      </ul>
+    </section>
+
+    <section data-aos="fade-right">
+      <h2>Understanding the Icons</h2>
+      <p>Weather icons are provided by Weatherbit and represent general conditions:</p>
+      <ul>
+        <li>☀️ Clear or sunny</li>
+        <li>🌥️ Partly cloudy</li>
+        <li>🌧️ Rain or showers</li>
+        <li>❄️ Snow</li>
+        <li>🌫️ Fog</li>
+        <li>⛈️ Thunderstorms</li>
+      </ul>
+    </section>
+
+    <section data-aos="zoom-in">
+      <h2>Having Trouble?</h2>
+      <p>If no results appear, double-check your coordinates. You can use Google Maps to look up latitude and longitude for any location.</p>
+      <p>Still stuck? Contact the team for help:</p>
+      <ul>
+        <li>Email: ayana@notreal.com</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script>
+  const darkToggle = document.createElement('button');
+  darkToggle.textContent = '🌓';
+  darkToggle.id = 'dark-toggle';
+  darkToggle.style.position = 'fixed';
+  darkToggle.style.top = '10px';
+  darkToggle.style.right = '10px';
+  darkToggle.style.zIndex = '999';
+  document.body.appendChild(darkToggle);
+  darkToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+  });
+</script>
+
+</body>
+</html>
